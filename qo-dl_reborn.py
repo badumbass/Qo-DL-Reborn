@@ -8,7 +8,6 @@ import time
 import argparse
 import platform
 import traceback
-from itertools import tee
 from datetime import datetime
 
 import qopy
