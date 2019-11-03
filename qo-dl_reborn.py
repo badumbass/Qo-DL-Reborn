@@ -57,7 +57,7 @@ def parse_prefs(cfg, tag_cfg):
 			'-u', '--url',
 			default='',
 			required=True,
-			help='Qobuz Player or Qobuz store URL. Single track or album.')
+			help='URL. Supported: album, artist page, fav albums, fav tracks, playlist, track.')
 		parser.add_argument(
 			'-q', '--quality',
 			default=cfg['qual'],
@@ -537,7 +537,6 @@ if __name__ == '__main__':
 		except IndexError:
 			cli = False
 		label = client.auth(cfg['email'], cfg['pwd'])
-		#;5 = 320 kbps MP3, 6 = 16-bit FLAC, 7 = 24-bit / =< 96kHz FLAC, 27 = best avail - 24-bit / >96 kHz =< 192 kHz FLAC.
 		print("Signed in successfully - " + label + " account.\n")
 		main(False, False, cfg, tag_cfg, None, cli)
 	except (KeyboardInterrupt, SystemExit):
