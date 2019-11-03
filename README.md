@@ -7,7 +7,7 @@ Tool written in Python to download streamable tracks from Qobuz.
 
 # Setup
 ## Quickstart ##
-Input the following field values for the keys below into your config file:
+Input the values for the keys below into your config file:
 - email
 - password; md5 hashed
 - quality
