@@ -42,7 +42,8 @@ Track | `https://open.qobuz.com/track/48237909`
 
 Qo-DL Reborn may also be used via CLI.    
 
-```usage: qo-dl_reborn.py [-h] -u URL [-q QUALITY] [-p--path P__PATH] [-c CSIZE]
+```
+usage: qo-dl_reborn.py [-h] -u URL [-q QUALITY] [-p--path P__PATH] [-c CSIZE]
                        [-k] [-C COMMENT] [-e]
 
 Tool written in Python to download streamable tracks from Qobuz.
