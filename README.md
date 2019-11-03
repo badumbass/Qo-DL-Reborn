@@ -63,7 +63,9 @@ optional arguments:
                         Size cover to request from API. 1 = 50x50, 2 =
                         230x230, 3 = 600x600. 4 = max. If no album cover is
                         returned, it won't be written to the album's tracks.
-  -k, --keepcov         Leave folder.jpg in album dir. Y or N.
+  -k, --keepcov         If true, the album's cover will be kept and renamed to from 
+                        "cover.jpg" to "folder.jpg" instead of being deleted. 
+                        Only applies to album or track URL (not plist etc.).
   -C COMMENT, --comment COMMENT
                         Write custom comment to comment tag in tracks. Make
                         sure you wrap this up in double quotes.
