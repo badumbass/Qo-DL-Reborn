@@ -49,8 +49,7 @@ Tool written in Python to download streamable tracks from Qobuz.
 
 optional arguments:
   -h, --help            show this help message and exit
-  -u URL, --url URL     Qobuz Player or Qobuz store URL. Single track or
-                        album.
+  -u URL, --url URL     URL. Supported: album, artist page, fav albums, fav tracks, playlist, track.
   -q QUALITY, --quality QUALITY
                         Track download quality. 1 = MP3 320, 2 = 16-bit FLAC,
                         3 = 24-bit / =< 96kHz FLAC, 4 = best. If your chosen
