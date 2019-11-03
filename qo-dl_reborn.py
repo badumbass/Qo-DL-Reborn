@@ -8,6 +8,7 @@ import time
 import argparse
 import platform
 import traceback
+from itertools import tee
 from datetime import datetime
 
 import qopy
@@ -240,6 +241,10 @@ def parse_meta(src, meta, num, tot):
 			tracktot = tot
 		else:
 			tracktot = src.get('tracks_count')
+		try:
+			year = datetime.fromtimestamp(src.get('released_at')).strftime('%Y')
+		except OSError:
+			year = src.get('release_date_original')
 		meta={
 			"ALBUMARTIST": src.get('artist', {}).get('name'),
 			"TRACKTOTAL": tracktot,
@@ -251,7 +256,8 @@ def parse_meta(src, meta, num, tot):
 			"URL": src.get('url'),
 			"UPC": src.get('upc'),
 			"GENRE": src.get('genre', {}).get('name'),
-			"YEAR": datetime.fromtimestamp(src.get('released_at')).strftime('%Y')}
+			"DATE": year,
+			"YEAR": year}
 	return meta
 
 def write_tags(f, meta, tag_cfg, cov, ext, embed_cov):
