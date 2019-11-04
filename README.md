@@ -37,9 +37,10 @@ Supported media:
 Type  | Example
 ------------- | -------------
 Album  | `https://play.qobuz.com/album/hxyqb40xat3uc`, `https://www.qobuz.com/gb-en/album/mount-to-nothing-sangam/hxyqb40xat3uc`
-Artist page  | `https://play.qobuz.com/artist/1619283`
+Artist  | `https://play.qobuz.com/artist/1619283`
 Favourited albums  | `https://play.qobuz.com/user/library/favorites/albums`
 Favourited tracks  | `https://play.qobuz.com/user/library/favorites/tracks`
+Label | `https://play.qobuz.com/label/118780`
 Playlist  | `https://play.qobuz.com/playlist/1452423`
 Track | `https://open.qobuz.com/track/48237909`
 
@@ -53,7 +54,7 @@ Tool written in Python to download streamable tracks from Qobuz.
 
 optional arguments:
   -h, --help            show this help message and exit
-  -u URL, --url URL     URL. Supported: album, artist page, fav albums, fav tracks, playlist, track.
+  -u URL, --url URL     URL. Supported: album, artist, fav albums, fav tracks, label, playlist, track.
   -q QUALITY, --quality QUALITY
                         Track download quality. 1 = MP3 320, 2 = 16-bit FLAC,
                         3 = 24-bit / =< 96kHz FLAC, 4 = best. If your chosen
