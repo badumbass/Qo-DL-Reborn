@@ -3,6 +3,9 @@ Tool written in Python to download streamable tracks from Qobuz.
 
 ![](https://orion.feralhosting.com/sorrow/qo_rb.jpg)
 
+
+**People have been seen selling our tools. DO NOT buy them. Our tools are free and always will be.**
+
 [COMPILED BUILDS HERE](https://github.com/Sorrow446/Qo-DL-Reborn/releases)
 
 # Setup
