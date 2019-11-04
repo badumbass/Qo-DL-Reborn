@@ -243,7 +243,7 @@ def parse_meta(src, meta, num, tot):
 		try:
 			year = datetime.fromtimestamp(src.get('released_at')).strftime('%Y')
 		except OSError:
-			year = src.get('release_date_original')
+			year = src.get('release_date_original').split('-')[0]
 		meta={
 			"ALBUMARTIST": src.get('artist', {}).get('name'),
 			"TRACKTOTAL": tracktot,
