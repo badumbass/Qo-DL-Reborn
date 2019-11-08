@@ -6,3 +6,6 @@ class IneligibleError(Exception):
 
 class InvalidAppIdError(Exception):
 	pass
+
+class InvalidAppSecretError(Exception):
+	pass
